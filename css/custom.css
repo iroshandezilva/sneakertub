@@ -1,0 +1,211 @@
+/*
+  Developer Name: Iroshan De Zilva
+  Author: ImaginX Studio
+  Support: hello@imaginxstudio.com
+  Developer email: iroshan@imaginxstudio.com
+  Developer URl : https://www.iroshandezilva.com/
+  Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --font-one: 'Kanit', sans-serif;
+    --font-two: 'Roboto', sans-serif;
+    --color-1: #2C6CFF;
+    --color-2: #F99E00;
+    --color-3: #0D005D;
+    --color-4: #5B6880;
+}
+
+body {
+    position: relative;
+    font-family: var(--font-two);
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--color-4);
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-one);
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.color-1 {
+    color: var(--color-1);
+}
+
+.color-2 {
+    color: var(--color-2);
+}
+
+.color-3 {
+    color: var(--color-3);
+}
+
+.color-4 {
+    color: var(--color-4);
+}
+
+.bg-1 {
+    background-color: var(--color-1);
+}
+
+.bg-2 {
+    background-color: var(--color-2);
+}
+
+.bg-3 {
+    background-color: var(--color-3);
+}
+
+.bg-4 {
+    background-color: var(--color-4);
+}
+
+.btn-sneaker {
+    padding: 15px 30px;
+    border-radius: 15px;
+    -webkit-transition: all .3s linear 0ms;
+    -khtml-transition: all .3s linear 0ms;
+    -moz-transition: all .3s linear 0ms;
+    -ms-transition: all .3s linear 0ms;
+    -o-transition: all .3s linear 0ms;
+    transition: all .3s linear 0ms;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #3100D8;
+    color: #FFFFFF !important;
+    border: none;
+    position: relative;
+    top: 0;
+}
+
+.btn-primary span {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.2em;
+    font-weight: 500;
+}
+
+.btn-primary div {
+    background: rgb(49 0 216 / 64%);
+    filter: blur(10px);
+    border-radius: 15px;
+    position: absolute;
+    width: 90%;
+    height: 60%;
+    left: 5%;
+    bottom: -9px;
+    z-index: -1;
+}
+
+.btn-primary:hover {
+    background: #2500a4;
+    border-color: #2500a4;
+    color: #fff;
+    top: -3px;
+}
+
+.btn-light {
+    color: #2d6cff;
+}
+
+.section-gap {
+    padding: 120px 0;
+}
+
+p.small {
+    line-height: 20px;
+}
+
+a.navbar-brand {
+    width: 160px;
+}
+
+.main-nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    justify-content: flex-end;
+    z-index: 9;
+}
+
+/*.slider-item:after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 54%;*/
+/*    height: 100%;*/
+/*    background: red;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    z-index: -1;*/
+/*    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);*/
+/*}*/
+
+
+.slider-item:before {
+    content: '';
+    position: absolute;
+    width: 54%;
+    height: 100%;
+    background-color: rgb(255 0 0);
+    background-image: url(../img/texture-bg.png);
+    top: 0;
+    right: 0;
+    z-index: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+#blue.slider-item:before {
+    background-color: #3100D8;
+}
+
+.slider-item {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.slider-title {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2500A4;
+}
+
+.slider-title span {
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #2602a4;
+    letter-spacing: 0.02em;
+}
+
+.slider-item:focus {
+    outline: none;
+}
+
+.slider-section{
+    background-image: url(../img/slider-bg.png);
+    background-size: contain;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
