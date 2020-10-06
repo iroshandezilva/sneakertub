@@ -11,9 +11,7 @@ $( document ).ready(function() {
     });
 
 
-    $('.js-tilt').tilt({
-        maxTilt:8,
-        perspective:    600
-    })
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
 
 });

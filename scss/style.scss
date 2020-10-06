@@ -1,0 +1,143 @@
+/*
+  Developer Name: Iroshan De Zilva
+  Author: ImaginX Studio
+  Support: hello@imaginxstudio.com
+  Developer email: iroshan@imaginxstudio.com
+  Developer URl : https://www.iroshandezilva.com/
+  Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import "mixing";
+
+$font1: 'Kanit', sans-serif;
+$font2: 'Roboto', sans-serif;
+
+$blue: #3100d8;
+$red: #E50336;
+$yellow: #F99E00;
+$dark-blue: #0D005D;
+$ash: #5B6880;
+$drak: #030304;
+$white: #ffffff;
+
+$fontsize: 16px;
+
+$border-r: 15px;
+
+
+body {
+  position: relative;
+  font-family: $font2;
+  color: $ash;
+  line-height: $fontsize + 10;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-one);
+  }
+
+  .btn-primary {
+    background-color: $drak;
+    color: #FFFFFF !important;
+    border: none;
+    position: relative;
+    top: 0;
+
+    span {
+      text-shadow: 0px 4px 4px #00000040;
+      letter-spacing: 0.2em;
+      font-weight: 500;
+    }
+
+    div {
+      background: rgba($drak, .5);
+      filter: blur(10px);
+      border-radius: $border-r;
+      position: absolute;
+      width: 90%;
+      height: 60%;
+      left: 5%;
+      bottom: -9px;
+      z-index: -1;
+    }
+
+    &:hover {
+      background: darken($drak, 40%);
+      border: none;
+      color: $white;
+      top: -3px;
+    }
+
+  }
+
+  .btn-sneaker {
+    padding: 15px 30px;
+    border-radius: 15px;
+    @include reset-list;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .section-gap {
+    padding: 120px 0;
+  }
+
+  p.small {
+    line-height: $fontsize + 4;
+  }
+
+  .main-nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    justify-content: flex-end;
+    z-index: 9;
+
+    .navbar-brand {
+      width: $fontsize * 10;
+    }
+  }
+
+  .section-1 {
+    background-image: url(../img/slider-bg.png);
+    background-size: contain;
+    background-position: center left;
+    background-repeat: no-repeat;
+
+    .slider-item {
+      .section-inner {
+        .slider-content {
+          h2 {
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 70px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #2500A4;
+
+            span {
+              color: black;
+              -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+              -webkit-text-stroke-width: 2px;
+              -webkit-text-stroke-color: #2602a4;
+              letter-spacing: 0.02em;
+            }
+          }
+        }
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
