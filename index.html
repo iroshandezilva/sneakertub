@@ -31,7 +31,7 @@
     <meta property="twitter:image" content="">
 
     <!--    <link rel="icon" type="image/x-icon" href="" />-->
-    <link rel="icon" type="image/png" href="img/fav-icon.png"/>
+    <link rel="icon" type="image/png" href="img/favicon.ico"/>
     <!--    <link rel="icon" type="image/gif" href="http://example.com/favicon.gif" />-->
 
 
@@ -59,13 +59,15 @@
     <link href="css/all.css" rel="stylesheet">
 
 
-    <!--    slick Slider-->
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
 
     <!--  Custom css here-->
-<!--    <link href="css/custom.css" rel="stylesheet">-->
+    <!--    <link href="css/custom.css" rel="stylesheet">-->
     <link href="scss/style.css" rel="stylesheet">
 
     <!--  responsive css here-->
@@ -87,50 +89,158 @@
 
         <ul class="navbar-nav ml-auto main-nav position-relative   ">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="packages.html">Packages</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Faq</a>
+                <a class="nav-link" href="packages.html">Join Now</a>
             </li>
+            
             <li class="nav-item">
-                <a class="nav-link" href="#">Cart</a>
+                <a class="nav-link" href="about-us.html">About Us</a>
             </li>
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="about-us.html">About Us</a>-->
+<!--            </li>-->
             <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="https://www.sneakertub.com/view-cart">Cart</a>
+            </li>
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="https://www.sneakertub.com/legal">Legal</a>-->
+<!--            </li>-->
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.sneakertub.com/customer/login">Login</a>
             </li>
         </ul>
     </div>
 </nav>
 
+<div class="window">
+    <div class="header  d-block d-lg-none">
+        <div class="burger-container">
+            <div id="burger">
+                <div class="bar topBar"></div>
+                <div class="bar btmBar"></div>
+            </div>
+        </div>
+        <div class="icon icon-apple">
+            <img alt="Sneakertub Logo" src="img/sneakertub-logo.png">
+        </div>
+        <ul class="menu">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="packages.html">Packages</a></li>
+            
+              <li class="menu-item"><a href="about-us.html">About us</a></li>
+            <li class="menu-item"><a href="packages.html">Join Now</a></li>
+            <li class="menu-item"><a href="https://www.sneakertub.com/view-cart">Cart</a></li>
+            <li class="menu-item"><a href="https://www.sneakertub.com/customer/login">Login</a></li>
+        </ul>
+        <div class="shop icon icon-bag"></div>
+    </div>
 
 <div class="page">
 
     <!-- ***   Slider Area *** -->
-
-    <div class="section-1 slider-section">
-        <div class="slider-item">
-            <div class="section-inner">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-5">
-                            <div class="slider-content">
-                                <h2 class="slider-title text-uppercase">Sneakertub <br> <span>Lite</span></h2>
-                                <p>Our most economical edition which Includes a Mystery pair of sneakers in your size.
-                                    Brands Included are Puma, Saucony, Asics, Ransom, New Balance, Supra, Palladium
-                                    Boots, Timberland and more.</p>
-                                <a href="" class="btn btn-primary btn-sneaker">
-                                    <span>Subscribe Now</span>
-                                    <div></div>
-                                </a>
+    <div class="silder-wrapper">
+        <div class="section-1 owl-carousel slider-section">
+            <div class="slider-item" id="light-package">
+                <div class="section-inner">
+                    <div class="container">
+                        <div class="row align-items-end">
+                            <div class="col-lg-5 order-2 order-lg-1">
+                                <div class="slider-content">
+                                    <h2 class="slider-title text-uppercase">Sneakertub <br> <span>Lite</span></h2>
+                                    <p>Our most economical subscription includes a pair of sneakers in your package.</p>
+                                    <a href="" class="btn btn-primary btn-sneaker">
+                                        <span>Subscribe Now</span>
+                                        <div></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 order-1 order-lg-2">
+                                <div class="parallax-img-wrapper" id="scene">
+                                    <div class="slider-img " data-depth="0.3">
+                                        <img src="img/sneakertub-lite-package.png" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-7">
-                            <div class="js-tilt-wrapper"  id="scene">
-                                <div class="slider-img " data-depth="0.5">
-                                    <img src="img/sneaker-lite.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item" id="original-package">
+                <div class="section-inner">
+                    <div class="container">
+                        <div class="row align-items-end">
+                            <div class="col-lg-5 order-2 order-lg-1">
+                                <div class="slider-content">
+                                    <h2 class="slider-title text-uppercase">Sneakertub <br> <span>OG</span></h2>
+                                    <p>Our original package includes a pair of sneakers and 3 accessories curated by our
+                                        sneakerhead staff. This package will give you a variety of sneakers from classic
+                                        silhouettes to future classics. </p>
+                                    <a href="" class="btn btn-primary btn-sneaker">
+                                        <span>Subscribe Now</span>
+                                        <div></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 order-1 order-lg-2">
+                                <div class="parallax-img-wrapper" id="scene">
+                                    <div class="slider-img " data-depth="0.3">
+                                        <img src="img/sneakertub-og-package.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item" id="premium-package">
+                <div class="section-inner">
+                    <div class="container">
+                        <div class="row align-items-end">
+                            <div class="col-lg-5 order-2 order-lg-1">
+                                <div class="slider-content">
+                                    <h2 class="slider-title text-uppercase">Sneakertub <br> <span>Premium</span></h2>
+                                    <p>Our most popular package is for the serious sneakerhead who always lives the swoosh life. </p>
+                                    <a href="" class="btn btn-primary btn-sneaker">
+                                        <span>Subscribe Now</span>
+                                        <div></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 order-1 order-lg-2">
+                                <div class="parallax-img-wrapper" id="scene">
+                                    <div class="slider-img " data-depth="0.3">
+                                        <img src="img/sneakertub-premium-package.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item" id="elite-package">
+                <div class="section-inner">
+                    <div class="container">
+                        <div class="row align-items-end">
+                            <div class="col-lg-5 order-2 order-lg-1">
+                                <div class="slider-content">
+                                    <h2 class="slider-title text-uppercase">Sneakertub <br> <span>Elite</span></h2>
+                                    <p>Curated specially for the Sneakerhead who loves a bang for his buck. Includes 2 pairs of Sneakers and 3-4 accessories. </p>
+                                    <a href="" class="btn btn-primary btn-sneaker">
+                                        <span>Subscribe Now</span>
+                                        <div></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 order-1 order-lg-2">
+                                <div class="parallax-img-wrapper" id="scene">
+                                    <div class="slider-img " data-depth="0.3">
+                                        <img src="img/sneaker-lite-4.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -138,22 +248,46 @@
                 </div>
             </div>
         </div>
+        <div class="social-header">
+            <div></div>
+        </div>
     </div>
-
-
     <!-- ***  End Slider Area *** -->
 
+    <div class="section-5">
+        <div class="container">
+            <div class="title-wrapper text-center">
+                <h2>Seen On</h2>
+            </div>
+            <img src="img/logos.jpg">
+        </div>
+    </div>
 
     <!-- ***   about us area *** -->
 
-    <div class="section-2 aboutus-area">
+    <div class="section-2 aboutus-area section-gap">
         <div class="section-inner">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6"></div>
-                    <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <div class="title-wrapper">
+<!--                            <span>Lorem ipsum dolor</span>-->
+                            <h2>The world's Only Sneaker subscription Service</h2>
+                        </div>
+                        <div class="p-content">
+                            <p>SNEAKERTUB is the world's only Sneaker subscription service delivering curated mystery sneakers and accessories to your doorstep, every month. Our Sneakerhead curators will hand pick sneakers and accessories from the best brands in the world to provide you a mind blowing sneaker experience. Pick Your Sneaker and Clothing sizes, We'll take care of the rest.
+                            </p>
+                        </div>
+                        <div class="btn-wrapper">
+                            <a href="packages.html" class="btn btn-primary btn-sneaker">
+                                <span>Read More</span>
+                                <div></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2">
                         <div class="aboutus-img">
-                            <img src="img/kamaj-image.png">
+                            <img src="img/sneaker-image-1.png">
                         </div>
                     </div>
                 </div>
@@ -163,11 +297,306 @@
 
     <!-- ***  end  about us area *** -->
 
+
+    <!-- ***  Packages area *** -->
+    <div class="section-3  packages-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="title-wrapper text-center">
+                        <h2>SNEAKERTUB is the world’s first mystery sneaker subscription.</h2>
+                        <p>We work with the best Sneaker brands in the world to curate monthly sneaker subscription packages for our subscribers. SNEAKERTUB includes sneakers from brands like Nike, Adidas, New Balance, Asics, Puma, Vans and many more to create amazing sneaker experiences for our subscribers. What’s better than gifting yourself a mystery sneaker package every month.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="packages-slider-wrapper">
+                <div class="packages-slider-inner">
+                    <div class="packages-slider owl-carousel">
+                        <div class="package-item">
+                            <div class="package-item-wrapper">
+                                <div class="package-item-inner">
+                                    <div class="package-feature-img">
+                                        <img src="img/sneakertub-lite-package-thumb.jpg"/>
+                                    </div>
+                                    <div class="package-content">
+                                        <h4>SNEAKERTUB LITE </h4>
+                                        <p>Pair of Sneakers.</p>
+                                        <div class="btn-wrapper">
+                                            <a href="https://www.sneakertub.com/subscribe/3444908350_lite-package?gift=False" class="btn btn-primary btn-sneaker">
+                                                <span>Subscribe now</span>
+                                                <div></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-item">
+                            <div class="package-item-wrapper">
+                                <div class="package-item-inner">
+                                    <div class="package-feature-img">
+                                        <img src="img/sneakertub-og-package-thumb.jpg"/>
+                                    </div>
+                                    <div class="package-content">
+                                        <h4>SNEAKERTUB OG </h4>
+                                        <p>Pair of Sneakers + 3 Accessories</p>
+                                        <div class="btn-wrapper">
+                                            <a href="https://www.sneakertub.com/subscribe/3444918280_original-package?gift=False" class="btn btn-primary btn-sneaker">
+                                                <span>Subscribe now</span>
+                                                <div></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-item">
+                            <div class="package-item-wrapper">
+                                <div class="package-item-inner">
+                                    <div class="package-feature-img">
+                                        <img src="img/sneakertub-premium-package-thumb.jpg"/>
+                                    </div>
+                                    <div class="package-content">
+                                        <h4>SNEAKERTUB Premium </h4>
+                                        <p>Pair of Nike or Air Jordan Sneakers + 3 Accessories</p>
+                                        <div class="btn-wrapper">
+                                            <a href="" class="btn btn-primary btn-sneaker">
+                                                <span>Subscribe now</span>
+                                                <div></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-item">
+                            <div class="package-item-wrapper">
+                                <div class="package-item-inner">
+                                    <div class="package-feature-img">
+                                        <img src="img/sneakertub-eliet-package-thumb.jpg"/>
+                                    </div>
+                                    <div class="package-content">
+                                        <h4>SNEAKERTUB Elite </h4>
+                                        <p>Two Pairs of Sneakers + 3 Accessories</p>
+                                        <div class="btn-wrapper">
+                                            <a href="https://www.sneakertub.com/subscribe/440022385_sneakertub-elite?gift=False" class="btn btn-primary btn-sneaker">
+                                                <span>Subscribe now</span>
+                                                <div></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-item">
+                            <div class="package-item-wrapper">
+                                <div class="package-item-inner">
+                                    <div class="package-feature-img">
+                                        <img src="img/pkg-2.png"/>
+                                    </div>
+                                    <div class="package-content">
+                                        <h4>SNEAKERTUB Kids </h4>
+                                        <p>Pair of Kids Sneakers + 2 Accessories</p>
+                                        <div class="btn-wrapper">
+                                            <a href="https://www.sneakertub.com/subscribe/3177788335_sneakertub-kids?gift=False" class="btn btn-primary btn-sneaker">
+                                                <span>Subscribe now</span>
+                                                <div></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***  end Packages area *** -->
+
+
+    <!-- ***  Testimonial area *** -->
+    <div class="section-4  testimonial-area section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="title-wrapper text-center">
+                        <h2>FAQ</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-wrapper">
+                <div class="faq-inner">
+                    <div class="faq-content">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <div class="" data-toggle="collapse" data-target="#collapseOne"
+                                             aria-expanded="true" aria-controls="collapseOne">
+                                            - DO I PICK WHAT I GET?
+                                        </div>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        While we can't always guarantee that we will be able to accommodate each
+                                        request, You can email customer service to let us know your preference.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <div class=" collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                             aria-expanded="false" aria-controls="collapseTwo">
+                                            - CAN I CANCEL?
+                                        </div>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        Absolutely! In order to provide the best overall customer service possible, we
+                                        take as much care of customers who choose to pause or cancel their subscriptions
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <div class="collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                             aria-expanded="false" aria-controls="collapseThree">
+                                            - HOW OFTEN?
+                                        </div>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                     data-parent="#accordion">
+                                    <div class="card-body">
+                                        We don’t want to overwhelm you or your closet, so we’ll send you a package once
+                                        every month to fix your sneaker addiction
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--            <div class="testimonial-slider-wrapper">-->
+            <!--                <div class="testimonial-slider-inner">-->
+            <!--                    <div class="testimonial-slider">-->
+            <!--                        <div class="testimonial-item">-->
+            <!--                            <div class="testimonial-item-wrapper">-->
+            <!--                                <div class="testimonial-item-inner">-->
+            <!--                                    <div class="row align-items-center">-->
+            <!--                                        <div class="col-3">-->
+            <!--                                            <div class="testimonial-img">-->
+            <!--                                                <img src="img/testi-img1.png">-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                        <div class="col-9">-->
+            <!--                                            <div class="testimonial-content">-->
+            <!--                                                <h5>Dianne Russell</h5>-->
+            <!--                                                <p>"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet-->
+            <!--                                                    sint. Velit officia consequat duis enim velit mollit. Exercitation-->
+            <!--                                                    veniam consequat sunt nostrud amet."</p>-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        <div class="testimonial-item">-->
+            <!--                            <div class="testimonial-item-wrapper">-->
+            <!--                                <div class="testimonial-item-inner">-->
+            <!--                                    <div class="row align-items-center">-->
+            <!--                                        <div class="col-3">-->
+            <!--                                            <div class="testimonial-img">-->
+            <!--                                                <img src="img/testi-imga.png">-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                        <div class="col-9">-->
+            <!--                                            <div class="testimonial-content">-->
+            <!--                                                <h5>Cameron Williamson</h5>-->
+            <!--                                                <p>"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet-->
+            <!--                                                    sint. Velit officia consequat duis enim velit mollit. Exercitation-->
+            <!--                                                    veniam consequat sunt nostrud amet."</p>-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        <div class="testimonial-item">-->
+            <!--                            <div class="testimonial-item-wrapper">-->
+            <!--                                <div class="testimonial-item-inner">-->
+            <!--                                    <div class="row align-items-center">-->
+            <!--                                        <div class="col-3">-->
+            <!--                                            <div class="testimonial-img">-->
+            <!--                                                <img src="img/testi-img1.png">-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                        <div class="col-9">-->
+            <!--                                            <div class="testimonial-content">-->
+            <!--                                                <h5>Dianne Russell</h5>-->
+            <!--                                                <p>"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet-->
+            <!--                                                    sint. Velit officia consequat duis enim velit mollit. Exercitation-->
+            <!--                                                    veniam consequat sunt nostrud amet."</p>-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        <div class="testimonial-item">-->
+            <!--                            <div class="testimonial-item-wrapper">-->
+            <!--                                <div class="testimonial-item-inner">-->
+            <!--                                    <div class="row align-items-center">-->
+            <!--                                        <div class="col-3">-->
+            <!--                                            <div class="testimonial-img">-->
+            <!--                                                <img src="img/testi-imga.png">-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                        <div class="col-9">-->
+            <!--                                            <div class="testimonial-content">-->
+            <!--                                                <h5>Cameron Williamson</h5>-->
+            <!--                                                <p>"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet-->
+            <!--                                                    sint. Velit officia consequat duis enim velit mollit. Exercitation-->
+            <!--                                                    veniam consequat sunt nostrud amet."</p>-->
+            <!--                                            </div>-->
+            <!--                                        </div>-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+        </div>
+    </div>
+
+    <!-- ***  end Testimonial area *** -->
+
+
+</div>
 </div>
 
 <footer class="footer">
-    <div class="container">
-
+    <div class="foooter-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>©2020 <b> SNEAKERTUB CORP. </b> ❤ mode by <a href="">Iroshan De Zilva</a></p>
+                </div>
+                <div class="col-lg-6 text-left text-lg-right">
+                    <a href="https://www.sneakertub.com/legal">TERMS & CONDITIONS</a>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 
@@ -176,7 +605,8 @@
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 <!--<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <!--Cusotm Js-->
 <script src="js/custom.js"></script>

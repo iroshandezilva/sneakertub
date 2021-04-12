@@ -6,3 +6,21 @@
   -o-transition: all .3s linear 0ms;
   transition: all .3s linear 0ms;
 }
+
+@mixin breakpoint($point) {
+  @if $point == mobile {
+    @media only screen and(max-width: 767px){
+      @content
+    }
+  }
+  @else if  $point == tablet {
+    @media only screen and (max-width: 1024px){
+      @content
+    }
+  }
+  @else if  $point == laptop {
+    @media only screen and (max-width: 1200px){
+      @content
+    }
+  }
+}
